@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    background-color: #f6f6f6;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: red;
+    text-align: center;
+}
+
+.pDisplay {
+    display: none;
+}
+
+.flex-container {
+    display: flex;
+    height: 76vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 40px;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+input[type="text"] {
+    outline: none;
+    border: 3px solid #f6f6f6;
+    border-radius: 3px;
+    height: 40px;
+    transition: 0.3s ease-in-out;
+    font-size: 1.2em;
+    padding: 0px 20px;
+    text-align: right;
+}
+
+input[type="text"]:focus {
+    border: 3px solid lightblue;
+}
+
+form {
+    grid-column: 1/3;
+}
+
+button {
+    outline: none;
+    border: 3px solid #f6f6f6;
+    background-color: #f6f6f6;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: teal;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+button:hover {
+    border: 3px solid lightblue;
+}
+
+#zero {
+    grid-column: 1/3;
+}   
+
+h4 {
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+        width: 70%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+}
