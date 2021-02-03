@@ -10,38 +10,44 @@
 </head>
 <body>
     <h1>Calculator App</h1>
-    <h3 class="pDisplay">Invalid Expression !!!</h3>
+    <h3 class="invalid">Invalid Expression !!!</h3>
     <div class="flex-container">
         <div class="wrapper">
-            <form id="form">
+            <form id="form1">
                 <input id="expression" type="text" name="expression" required>
             </form>
-
-            <button id="clear" type="button">C</button>
             <button id="addition" type="button">+</button>
+            <button id="minus" type="button">-</button>
+            <button id="multiplication" type="button">*</button>
+            <button id="divison" type="button">/</button>
 
             <button id="seven" type="button">7</button>
             <button id="eight" type="button">8</button>
             <button id="nine" type="button">9</button>
-            <button id="minus" type="button">-</button>
+            <button id="backspace">&#9003;</button>
 
             <button id="four" type="button">4</button>
             <button id="five" type="button">5</button>
             <button id="six" type="button">6</button>
-            <button id="multiplication" type="button">*</button>
-
+            
             <button id="one" type="button">1</button>
             <button id="two" type="button">2</button>
             <button id="three" type="button">3</button>
-            <button id="divison" type="button">/</button>
-
+            
             <button id="zero" type="button">0</button>
             <button id="decimal" type="button">.</button>
-            <button id="equalsTo" type="submit" form="form">=</button>
-
+            <button id="clear" type="button">C</button>
+            <button id="equalsTo" type="submit" form="form1">=</button>
+        </div>
+        <div class="history">
+            <div>
+            
+                <h2>History</h2>
+                <button>Clear History</button> 
+            </div>
         </div>
     </div>
     <h4>Coded by Lakshman Sivakumar</h4>
-    <script src="calculator.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
